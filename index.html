@@ -24,11 +24,12 @@
 		<!-- Intro -->
 		<div id="intro">
 			<h1>Cong Peng</h1>
+			<p><img src="images/Animal Crossing.jpg" alt="" width="50%" /></p></span>
 			<p>Hello, and thanks for visiting my website! My name is Cong Peng, and you can call me Connor.</p>
 			<p>Currently, I am a graduate of the MSc Computer Games programme at Queen Mary, University of London.</p>
 			<p>I am also a game enthusiast who wishes to become a game developer.</p>
-			<p>In game development, I have an interest in game design, AI and programming.</p>
-			<p>I enjoy solving problems creatively, especially when assets are limited.</p>
+			<p>I am interested in game design, AI and programming, and I enjoy solving problems creatively, especially
+				with limited assets.</p>
 		</div>
 
 		<!-- Nav -->
@@ -51,7 +52,7 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Featured Post -->
+			<!-- Project 1 -->
 			<article class="post featured">
 				<header class="major">
 					<h2>DDA Boss Fights</h2>
@@ -70,27 +71,63 @@
 						It was pretty challenging to create the boss’ abilities and add audio with only free assets,
 						but I enjoyed it a lot during this process.</p>
 					<p>Finally, I surveyed to collect players’ opinions. Among 20 participants, I found that those
-						bosses applied with a DDA system were generally more popular, while players with different skill
-						levels had diverse preferences for bosses.</p>
+						bosses applied with a DDA system are generally more popular, while players with different skill
+						levels have diverse preferences for bosses.</p>
 				</header>
 				<a class="image main"><img src="images/DDA boss fight.png" alt="" /></a>
 				<ul class="actions special">
-					<li><a href="https://github.com/NoFaceGoose/DDA-Boss-Fight" class="button large">Check it out</a></li>
+					<li><a href="https://github.com/NoFaceGoose/DDA-Boss-Fight" class="button large">Check it out</a>
+					</li>
 				</ul>
 			</article>
 
-			<!-- Featured Post -->
+			<!-- Project 2 -->
 			<article class="post featured">
 				<header class="major">
 					<h2>2D Game Level Generator</h2>
-					<p></p>
+					<p>This project was the prototype of DDA boss fights, and it is written in <b>C#</b> and developed
+						in <b>Unity</b>.
+					</p>
+					<p>The generator uses <b>Perlin noise</b> to generate caves to form the fundamental level structure.
+						Then in the caves, it randomly generates spikes, potions and particles (random player events,
+						e.g.,
+						decreasing player movement speed and increasing player attack damage). </p>
+					<p>
+						It can generate diverse levels by adjusting the modifier of Perlin noise, the danger degree, and
+						the potion and player events proportion. There is always a path to the boss stage, thanks to
+						channel control.
+					</p>
 				</header>
-				<a class="image main"><img src="images/pic01.jpg" alt="" /></a>
+				<a class="image main"><img src="images/2D level generator.png" alt="" /></a>
 				<ul class="actions special">
-					<li><a href="#" class="button large">Check it out</a></li>
+					<li><a href="https://github.com/NoFaceGoose/Tech_Demo" class="button large">Check it out</a></li>
+				</ul>
+			</article>
+
+			<!-- Project 3 -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Frozen Lake Level Generator</h2>
+					<p>As an environment for Reinforcement Learning, Frozen Lake’s levels are not designed for human
+						players. Most of its levels are not fun enough from a player’s perspective, but I believe it has
+						the potential to be enjoyable.</p>
+					<p>So, I used <b>Evolutionary Algorithm</b> to generate fun levels of Frozen Lake. The project was
+						written
+						in <b>Python</b> and developed in <b>Google Colab</b>. </p>
+					<p>The most challenging part was the definition of fitness. With the knowledge of game design
+						fundamentals, I integrated three features into the fitness function: the length of the shortest
+						path, the number of holes and the danger degree of the shortest path.</p>
+					<p>The result was quite satisfying, and the generator can produce high-quality levels of
+						Frozen Lake stably.</p>
+				</header>
+				<a class="image main"><img src="images/Forzen Lake level generator.png" alt="" /></a>
+				<ul class="actions special">
+					<li><a href="https://colab.research.google.com/drive/1rF9vCWHbeeoCodi0ITcXOHKw6Pm1hFAn?usp=sharing"
+							class="button large">Check it out</a></li>
 				</ul>
 			</article>
 		</div>
+
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
