@@ -28,10 +28,7 @@
 			<p>Currently, I am a graduate of the MSc Computer Games programme at Queen Mary, University of London.</p>
 			<p>I am also a game enthusiast who wishes to become a game developer.</p>
 			<p>In game development, I have an interest in game design, AI and programming.</p>
-			<p>I enjoy solving problems creatively, especially with limited assets.</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
+			<p>I enjoy solving problems creatively, especially when assets are limited.</p>
 		</div>
 
 		<!-- Nav -->
@@ -57,25 +54,36 @@
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2>DDA Boss Fight</h2>
-					<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-						facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-						amet nullam sed etiam veroeros.</p>
+					<h2>DDA Boss Fights</h2>
+					<p>Imagine having a boss and multiple actions (especially attacks) already designed.
+						Then an AI system can automatically manage the boss's behaviour.
+						If we apply the system to a <b>behaviour tree</b>,
+						the step of random selection will be replaced with choosing an action using the <b>Dynamic
+							Difficulty Adjustment (DDA)</b> system based
+						on the player’s performance.</p>
+					<p>The system targets minimising the HP gap between the player and the boss.
+						During the selection step, the fitness of each action is calculated first.
+						Then I introduced two selection strategies from <b>Evolutionary Algorithm</b>, Roulette and
+						Rank, for
+						the action choice.</p>
+					<p>The project is written in <b>C#</b> and developed in <b>Unity</b>.
+						It was pretty challenging to create the boss’ abilities and add audio with only free assets,
+						but I enjoyed it a lot during this process.</p>
+					<p>Finally, I surveyed to collect players’ opinions. Among 20 participants, I found that those
+						bosses applied with a DDA system were generally more popular, while players with different skill
+						levels had diverse preferences for bosses.</p>
 				</header>
-				<a class="image main"><img src="images/pic01.jpg" alt="" /></a>
+				<a class="image main"><img src="images/DDA boss fight.png" alt="" /></a>
 				<ul class="actions special">
-					<li><a href="#" class="button large">Check it out</a></li>
+					<li><a href="https://github.com/NoFaceGoose/DDA-Boss-Fight" class="button large">Check it out</a></li>
 				</ul>
 			</article>
 
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2>And this is a<br />
-						massive headline</h2>
-					<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-						facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-						amet nullam sed etiam veroeros.</p>
+					<h2>2D Game Level Generator</h2>
+					<p></p>
 				</header>
 				<a class="image main"><img src="images/pic01.jpg" alt="" /></a>
 				<ul class="actions special">
