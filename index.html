@@ -36,7 +36,7 @@
 		<nav id="nav">
 			<ul class="links">
 				<li class="active">
-					<a>Projects</a>
+					<a>Highlights</a>
 				</li>
 			</ul>
 			<ul class="icons">
@@ -56,21 +56,22 @@
 			<article class="post featured">
 				<header class="major">
 					<h2>DDA Boss Fights</h2>
-					<p>Imagine having a boss and multiple actions (especially attacks) already designed.
-						Then an AI system can automatically manage the boss's behaviour.
-						If we apply the system to a <b>behaviour tree</b>,
-						the step of random selection will be replaced with choosing an action using the <b>Dynamic
-							Difficulty Adjustment (DDA)</b> system based
-						on the player’s performance.</p>
-					<p>The system targets minimising the HP gap between the player and the boss.
-						During the selection step, the fitness of each action is calculated first.
-						Then I introduced two selection strategies from <b>Evolutionary Algorithm</b>, Roulette and
-						Rank, for
-						the action choice.</p>
+					<p>Imagine having a boss and multiple actions (especially attacks) already designed. Then an AI
+						system can automatically manage the boss's behaviour. If we apply the system to a <b>behaviour
+							tree</b>, the step of random selection will be replaced with choosing an action using the
+						<b>Dynamic Difficulty Adjustment (DDA)</b> system based on the player’s performance.
+					</p>
+					<p>The system targets minimising the <b>HP gap</b> between the player and the boss to improve the
+						<b>player experience</b>.
+						During the selection step, the <b>fitness</b> of each action is calculated first.
+						Then I introduced two selection strategies from <b>Evolutionary Algorithm</b>, <b>Roulette</b>
+						and <b>Rank</b>, for the action choice.
+					</p>
 					<p>The project is written in <b>C#</b> and developed in <b>Unity</b>.
 						It was pretty challenging to create the boss’ abilities and add audio with only free assets,
 						but I enjoyed it a lot during this process.</p>
-					<p>Finally, I surveyed to collect players’ opinions. Among 20 participants, I found that those
+					<p>Finally, I <b>surveyed</b> to collect players’ opinions. Among 20 participants, I found that
+						those
 						bosses applied with a DDA system are generally more popular, while players with different skill
 						levels have diverse preferences for bosses.</p>
 				</header>
@@ -89,13 +90,15 @@
 						in <b>Unity</b>.
 					</p>
 					<p>The generator uses <b>Perlin noise</b> to generate caves to form the fundamental level structure.
-						Then in the caves, it randomly generates spikes, potions and particles (random player events,
-						e.g.,
-						decreasing player movement speed and increasing player attack damage). </p>
+						Then in the caves, it randomly generates <b>level features</b> including spikes, potions and
+						particles
+						(random player events, e.g., decreasing player movement speed and increasing player attack
+						damage). </p>
 					<p>
-						It can generate diverse levels by adjusting the modifier of Perlin noise, the danger degree, and
+						It can generate <b>diverse</b> levels by adjusting the modifier of Perlin noise, the danger
+						degree, and
 						the potion and player events proportion. There is always a path to the boss stage, thanks to
-						channel control.
+						<b>channel control</b>.
 					</p>
 				</header>
 				<a class="image main"><img src="images/2D level generator.png" alt="" /></a>
@@ -114,8 +117,9 @@
 					<p>So, I used <b>Evolutionary Algorithm</b> to generate fun levels of Frozen Lake. The project was
 						written
 						in <b>Python</b> and developed in <b>Google Colab</b>. </p>
-					<p>The most challenging part was the definition of <b>fitness</b>. With the knowledge of game design
-						fundamentals, I integrated three features into the fitness function: the length of the shortest
+					<p>The most challenging part was the definition of fitness. With the knowledge of game design
+						fundamentals, I integrated three features into the <b>fitness function</b>: the length of the
+						shortest
 						path, the number of holes and the danger degree of the shortest path.</p>
 					<p>The result was quite satisfying, and the generator can produce <b>high-quality</b> levels of
 						Frozen Lake stably.</p>
@@ -130,8 +134,8 @@
 			<!-- Project 4 -->
 			<article class="post featured">
 				<header class="major">
-					<h2>Mini Game</h2>
-					<p> Written in <b>C++</b>, this mini game involves multiple <b>game design patterns</b>. Through
+					<h2>Mini-Game</h2>
+					<p> Written in <b>C++</b>, this mini-game involves multiple <b>game design patterns</b>. Through
 						this project, I have learnt how significant the design patterns are for extensibility and
 						readability, and the cost of each pattern.</p>
 					<p>I worked with a fellow student to complete the assignment, and we ultimately received a mark of
@@ -149,14 +153,19 @@
 			<article class="post featured">
 				<header class="major">
 					<h2>Tales of Syrinx</h2>
-					<p>Written in <b>C#</b>, Tales of Syrinx is a <b>platformer</b> developed in Unity by a group of
-						three. </p>
+					<p>Written in <b>C#</b>, Tales of Syrinx is a <b>platformer</b> developed in <b>Unity</b> by a
+						group of three.
+					</p>
 					<p>One member wished to retell the Syrinx myth from Greek mythology. She was transformed into hollow
 						water reeds to run away from the amorous god Pan. So, I designed the reed generation as her core
-						ability. The player can use the reed as a temporary platform and defensive tool in the game.
-						Then I designed several puzzles around the reed in the level. Creating <b>multipurpose</b>
-						abilities has become my favourite design process.</p>
-					<p>In terms of teamwork, we did well overall. However, I was eager to add more features and was
+						<b>ability</b>. The player can use the reed as a temporary platform and defensive tool in the
+						game.
+						Then I designed several <b>puzzles</b> around the reed in the level. Creating
+						<b>multipurpose</b>
+						abilities has become my favourite design process.
+					</p>
+					<p>In terms of <b>teamwork</b>, we did well overall. However, I was eager to add more features and
+						was
 						overly detail-oriented. So, the project became somewhat disordered as I did too many, even some
 						of which were not my responsibility. Later I realised that the development should have started
 						out with a detailed plan, and the division of tasks should have been clear-cut.</p>
@@ -172,8 +181,10 @@
 			<article class="post featured">
 				<header class="major">
 					<h2>Battle of the Plants</h2>
-					<p>Battle of the Plants is a 2v2 <b>board game</b>. I spend much time designing the core mechanics to make
-						the rules <b>simple</b> and <b>intuitive</b>. Besides, I <b>playtested</b> the game and adopted others’ feedback to
+					<p>Battle of the Plants is a 2v2 <b>board game</b>. I spend much time designing the core mechanics
+						to make
+						the rules <b>simple</b> and <b>intuitive</b>. Besides, I <b>playtested</b> the game and adopted
+						others’ feedback to
 						improve the <b>balance</b>. I was excited to see how much my fellow students appreciated it.</p>
 				</header>
 				<a class="image main"><img src="images/Battle of the Plants.png" alt="" /></a>
@@ -182,6 +193,36 @@
 							out</a>
 					</li>
 				</ul>
+			</article>
+
+			<!-- Project 7 -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Pommerman Agents</h2>
+					<p> This project is written in <b>Java</b>, which includes three AI agents I designed for the
+						<b>Pommerman</b> game.
+					</p>
+					<p>The first one chooses the action according to the current time, and the second one involves
+						rule-based and <b>One step look ahead (OSLA)</b> methods. The last one is a variant of the
+						<b>Monte-Carlo Tree Search (MCTS)</b>, enhanced by <b>progressive bias</b> and <b>biasing
+							rollouts.</b>
+					</p>
+					<p> All agents perform better than the agents in the same skill levels.</p>
+					<a class="image main"><img src="images/Pommerman.png" alt="" /></a>
+					<ul class="actions special">
+						<li><a href="https://github.com/NoFaceGoose/Pommerman" class="button large">Check it out</a>
+						</li>
+					</ul>
+				</header>
+			</article>
+
+			<!-- Review -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Technical Reviews</h2>
+					<p><b>1. AI Companions in BioShock Infinite and The Last of Us</b></p>
+					<p><b>2. Video Game Design with Description Languages</b> (grade: <b>90%</b>)</p>
+				</header>
 			</article>
 		</div>
 
